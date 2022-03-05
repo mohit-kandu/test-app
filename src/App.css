@@ -1,38 +1,99 @@
-.App {
+html, body{
+  margin:0;
+  padding:1em;
+  box-sizing: border-box;
+  background-color: #1a1110;
+  font-family: sans-serif;
+}
+
+body{
+  margin-inline:auto;
+}
+.red-border{
+  border:1px solid red;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+
+/* modal animation */
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+  
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+.draggable {
+  /* background-color: yellow; */
+  line-height: 1em; 
+}
+.priority_3{
+  background-color: rgba(226, 21, 21, 0.842);
+  color:white;
+}
+.priority_2{
+background-color: orange;
+}
+.priority_1{
+background-color: rgba(226, 226, 27, 0.925);
+}
+
+/* styles */
+.container{
+  border:1px solid rgba(182, 172, 172, 0.899);
+  padding-block-start:1em;
+}
+.search_title{
+  color:white;
   text-align: center;
+  margin-block:.5em;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
+  width: fit-content;
+  margin-inline:auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap:.25em;
 }
-
-.App-link {
-  color: #61dafb;
+.nav select{
+  padding:.5em;
+  border:1px solid transparent;
+  border-radius: .25em;
+  background-color: rgba(180, 174, 174, 0.74);
+  color:white;
+  font-weight:600;
 }
+.nav input[type="search"]{
+  background-color: rgba(180, 174, 174, 0.74);
+  color:white;
+  border:2px solid transparent;
+  transition: all 250ms;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.nav input[type="search"]:active,.nav input[type="search"]:focus{
+  border:2px solid white;
+  outline:none;
+  transition: all 250ms;
+}
+button{
+  padding:.75em;
+  background-color: rgba(180, 174, 174, 0.74);
+  color:white;
+  border:1px solid transparent;
+  border-radius: .25em;
+  cursor: pointer;
+  transition: all 250ms;
+}
+button:hover{
+  opacity: .8;
+  background-color:white;
+  color: black;
+  transition: all 250ms;
+
 }

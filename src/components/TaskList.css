@@ -1,0 +1,32 @@
+.task_container{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    align-items: center;
+    padding:2em;
+}
+.modal_close_button{
+    text-align:end;
+}
+.form-element{
+    display: flex;
+    flex-direction: column;
+    gap:.25em;
+    margin-block-end:1em;
+}
+.form-element input{
+    padding-inline:1em;
+    padding-block:.25em;
+}
+.form-element select{
+    padding-block:.25em;
+}
+.filteredGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:.5em;
+    width: 100%;
+    /* place-items: center; */
+    /* border:1px solid green; */
+    padding:1em;
+}

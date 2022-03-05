@@ -1,0 +1,40 @@
+.task{
+    padding:1em;
+    color:white;
+    /* border-block-end:1px solid grey; */
+    border:1px solid grey;
+}
+.task_details{
+    width: 100%;
+    
+}
+.task_buttons{
+    display: flex;
+    gap:1em;
+    margin-block-start:1em;
+    padding-block-start: .25em;
+    flex-wrap: wrap;
+}
+.task_buttons button{
+    border:1px solid transparent;
+    padding:.5em;
+    border-radius: .25em;
+    cursor: pointer;
+}
+.task_buttons button:first-child{
+    background-color: red;
+    color:white;
+}
+.task_buttons button:first-child:hover{
+    color: red;
+    background-color:white;
+}
+.puffLoader{
+    position: relative;
+    top:-12em;
+    left:10em;
+}
+.fading{
+    opacity: .5;
+    background-color: grey;
+}
